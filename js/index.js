@@ -23,16 +23,6 @@ if (hacker1.length > hacker2.length) {
 // Iteration 3: Loops
 
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals
-console.log("Driver's name characters separated by space and in capitals:");
-console.log(hacker1.toUpperCase().split('').join(' '));
-
-// 3.2 Print all the characters of the navigator's name, in reverse order
-console.log("Navigator's name characters in reverse order:");
-console.log(hacker2.split('').reverse().join(''));
-
-// 3.3 Depending on the lexicographic order of the strings, print:
-
-// 3.1 Print all the characters of the driver's name, separated by a space and in capitals
 let driverNameSeparated = "";
 for (let i = 0; i < hacker1.length; i++) {
     if (i !== 0) {
@@ -42,7 +32,8 @@ for (let i = 0; i < hacker1.length; i++) {
 }
 console.log("Driver's name characters separated by space and in capitals:");
 console.log(driverNameSeparated);
-// 3.2
+
+// 3.2 Print all the characters of the navigator's name, in reverse order
 let navigatorNameReversed = "";
 for (let i = hacker2.length - 1; i>=0; i--) {
     navigatorNameReversed += hacker2[i]
